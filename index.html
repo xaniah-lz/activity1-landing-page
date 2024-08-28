@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Development</title>
+  </head>
+  <body>
+    <header id="Home">
+      <nav>
+        <div class="nav__logo"><a href="#">WebDev</a></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#Home">Home</a></li>
+          <li class="link"><a href="#Description">Description</a></li>
+          <li class="link"><a href="#Importance">Importance</a></li>
+        </ul>
+        <div class="toggle__btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+      <div class="hero">
+        <h2>EXPLORE THE</h2>
+        <h1 class="web">WEB</h1>
+        <h1 class="devlp">DEVELOPMENT</h1>
+        <button class="exp"><a href="https://www.codecademy.com/resources/blog/what-is-web-development/">Explore Now</a></button>
+      </div>
+    </header>
+
+    <!-- Description Section -->
+    <section id="Description">
+      <div class="description">
+        <h1 class="title">Deep Dive into Web Development</h1>
+        <p class="content">Web development is essential for creating and managing websites and web applications. 
+            It involves front-end development, which focuses on the user interface and user experience using 
+            HTML, CSS, and JavaScript, and back-end development, which handles server-side logic and database interactions with languages 
+            like PHP, Python, and Ruby. Full-stack development integrates both front-end and back-end skills to build complete web solutions. 
+            Effective web development enhances user experience, supports branding and marketing efforts, improves search engine visibility, 
+            and provides valuable data through analytics. As technology evolves, 
+            web development adapts to meet new challenges and opportunities in the digital landscape.</p>
+      </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section id="Importance">
+      <div class="importance">
+        <h1 class="title">The Importance of Web Development</h1>
+        <p class="content">Web development is essential for establishing an effective online presence. 
+            It ensures businesses have a functional and user-friendly website that supports branding, 
+            marketing, and competitive advantage. A well-developed site enhances user experience, 
+            improves search engine visibility, and adapts to mobile devices. 
+            It also provides valuable data and analytics for informed decision-making, 
+            making it crucial for success in the digital landscape.</p>
+      </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggleBtn = document.querySelector(".toggle__btn");
+          const navLinks = document.querySelector(".nav__links");
+
+          toggleBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+          });
+        });
+    </script>
+
+<footer>
+  <p>All rights reserved &copy; 2024, developed by Lorejoy Zorrilla ║ BSIT-3B</p>
+</footer>
+  </body>
+</html>
+
